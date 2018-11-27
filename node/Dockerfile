@@ -9,7 +9,7 @@ RUN git clone https://github.com/tardisbleu/node.git .
 # Install packages
 RUN npm install --silent
 
-# Allows port 3000 to be publicly available
+# Allows port 80 to be publicly available
 EXPOSE 80
 
 # launch server
