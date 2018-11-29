@@ -4,7 +4,7 @@ FROM node:10-alpine
 WORKDIR /src/app
 
 # Clone git project
-RUN apk update && apk upgrade && apk add git openssh
+RUN apk update && apk upgrade && apk add git
 RUN git clone https://github.com/tardisbleu/node.git .
 
 # Install packages
