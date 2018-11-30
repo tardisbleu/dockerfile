@@ -8,6 +8,6 @@ docker rm helloworld
 docker rmi node:helloworld --force
 
 docker build -t node:helloworld .
-docker run -p 80:80 --name helloworld -d node:helloworld
+docker run -p 80:80 -restart always --name helloworld -d node:helloworld
 echo "---"
 echo "End update"
